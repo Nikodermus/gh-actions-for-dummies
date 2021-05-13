@@ -13,3 +13,7 @@ jobs:
           node -v
           npm -v
           yarn -v
+      - name: Python Commands
+        run: |
+          print('test python')
+        shell: python
