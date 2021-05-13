@@ -17,3 +17,8 @@ jobs:
         run: |
           print('test python')
         shell: python
+  use-other-shell:
+    runs-on: macos-latest
+    steps:
+      - name: Runnin in mac
+        run: man
