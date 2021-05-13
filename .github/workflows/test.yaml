@@ -1,0 +1,15 @@
+name: Shell Commands
+
+on: [push]
+
+jobs:
+  create-shell:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show something in console
+        run: echo "Heya :)"
+      - name: Create a multiline Command
+        run: |
+          node -v
+          npm -v
+          yarn -v
