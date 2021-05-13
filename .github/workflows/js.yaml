@@ -1,0 +1,15 @@
+name: JavaScript Action
+
+on: [push]
+
+jobs:
+  run-a-dependent-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Action from marketplace
+        id: action-from-mp
+        uses: actions/hello-world-javascript-action@master
+        with:
+          who-to-great: Nico
+      - name: Dependant step
+        run: echo "${{ steps.action-from-mp.outputs.time }}"
