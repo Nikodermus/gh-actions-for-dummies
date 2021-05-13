@@ -10,6 +10,6 @@ jobs:
         id: action-from-mp
         uses: actions/hello-world-javascript-action@master
         with:
-          who-to-great: Nico
+          who-to-greet: Nico
       - name: Dependant step
         run: echo "${{ steps.action-from-mp.outputs.time }}"
